@@ -443,11 +443,9 @@ small {
     .section-ttl {
         font-size: 28px;
         margin: 100px 0 80px 0;
-        padding: 0 66px;
+        padding: 0 15px;
     }
-    .section-ttl:before, .section-ttl:after {
-        margin: 0 15px;
-    }
+    
     .service-inner {
         flex-direction: column;
         text-align: center;
