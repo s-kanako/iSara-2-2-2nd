@@ -3,7 +3,7 @@
     width: 100%;
     font-family: 'YuGothic';
     color: #333333;
-    padding: 0 100px;
+    margin: 0 auto;
 }
 
 /* img */
@@ -27,7 +27,7 @@ a {
     width: 166px;
     height: 48px;
     text-align: center;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.16); /* 影 */
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.16); 
 
 }
 .btn a {
@@ -92,7 +92,10 @@ header {
     display: flex;
     justify-content: space-between;
     height: 70px;
-    align-items: center; /* flexbox上下中央揃い */
+    align-items: center; 
+    width: 1080px; /*サイズが変わっても1080pxに合わせる*/
+    margin: 0 auto;
+    max-width: 100%;
 }
 .logo img {
     width: 130px;
@@ -104,7 +107,7 @@ header {
 .mv {
     display: flex;
     margin-top: 91px; 
-    align-items: center; /* flexbox上下中央揃い */
+    align-items: center; 
     width: 1080px;
     max-width: 100%;
     margin-right: auto;
@@ -127,50 +130,41 @@ header {
     margin-left: auto;
 }
 
-/**** section-title *****/
 
+/**** heading *****/
 
-.heading {
-    font-size: 36px;
-    width: 680px;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.section-ttl {
+.heading { /*center寄せ*/
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 100px 20px;
+    margin: 100px 0; 
+    max-width: 100%;
+} 
+.heading h2 {
     font-size: 36px;
-    padding: 0 41px;
 }
-
-
-.section-ttl:before, .section-ttl:after {
+.heading:before, .heading:after {
     content: "";
     height: 4px; 
     background: #109954; 
-    width: 200px; /* 長さ調節 */
+    width: 200px; 
 }
-.section-ttl:before {
+.heading:before {
     margin-right: 20px;
 }
-.section-ttl:after {
+.heading:after {
     margin: 0 0 0 20px;
 }
 
 
 /* ** service ** */
-
-
 .service-inner {
     display: flex;
     justify-content: space-between;
     width: 1080px;
     max-width: 100%;
     padding: 0 140px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 
 .service-inner img{
@@ -189,10 +183,8 @@ header {
     padding: 0 70px;
     max-width: 100%;
     width: 1080px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
-
 .about-upper , .about-bottom {
     display: flex;
     justify-content: space-between; 
@@ -206,21 +198,19 @@ header {
 }
 .about-inner img{
     width: 48%;
-    box-shadow: 3px 3px 20px rgba(0,0,0,0.16); /* 影 */
-
+    height: 50%;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.16); 
 }
 .about-inner img + .about-txt p , .about-txt h3, .btn5 {
     margin-left: 40px;
     margin-right: 0;
 }
-
 .about-txt p {
     font-size: 16px;
     margin-right: 40px;
     margin-bottom: 30px;
     text-align: left;
 }
-
 .about-txt h3 {
     color: #109954;
     margin-bottom: 30px;
@@ -228,18 +218,14 @@ header {
     text-align: left;
 }
 
+
 /**** blog  ******/
-
-
 .news-inner {
     padding: 0 40px;
     max-width: 100%;
     width: 1080px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
-
-
 article {
     display: flex;
     position:relative;
@@ -253,23 +239,19 @@ article .link {
     width: 100%;
     height: 100%;
 }
-
 hr {
     border: 1px solid #D6D6D6;
     background-color: #D6D6D6;
 }
-
 .blog-date {
     display: flex;
     margin-bottom: 20px;
 }
-
 time {
     font-weight: bold;
     font-size: 16px;
     margin-right: 24px;
 }
-
 .category {
     background-color: #fff;
     color: #109954;
@@ -281,8 +263,6 @@ time {
     border-radius: 30px;
     text-align: center;
 }
-
-
 figure img{ 
     width: 300px;
     height: 168px;
@@ -293,63 +273,52 @@ article h2 {
     font-size: 16px;
     font-weight: bold;
 }
-
 article p {
     font-size: 16px;
 }
 
 
+
 /**** footer *****/
-
-
 footer {
     height: 135px;
     background-color: #E8E8E8;
     max-width: 100%;
     font-family: 'YuGothic';
-    
 }
-
-.footer-logo {
+.footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
-    
+    width: 1080px;
+    margin: 0 auto;
+    max-width: 100%;
 }
-
-.footer-logo img{
+.footer img{
     margin-top: 25px;
     width: 70px;
 }
-
 ul {
     display: flex;
     margin-top: 50px;
 }
-
 li {
     list-style: none;
     height: 20px;
 }
-
-/* * footerの隣接セレクタ * */
 li+ li {
     border-left: 1px solid #333;
 }
-
 a {
     color: #333;
 }
-.footer-logo a{
+.footer a{
     font-size: 14px;
     text-decoration: none;
     margin: 0 18px;
 }
 .footer-txt {
-    text-align: center;
-    
+    text-align: center;   
 }
-
 small {
     font-size: 14px;
 }
@@ -359,52 +328,38 @@ small {
 
 /* resposible */
 
-
-
-
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 57px;
-    }
-    .mv {
-        width: 850px;
-    }
-    .mv img {
-        width: 40%;
-    }
-
-    .heading {
-        text-align: center;
-        padding: 0;
-    }
-    .service-inner {
-        width: 925px;
-        padding: 0;
-    }
-    .about-inner {
-        width: 925px;
-        padding: 0 20px;
-    }
-    .news-inner {
-        width: 925px;
-    }
-    
-}
-
-
-@media screen and (max-width: 767px) {
-
+@media screen and (max-width: 1080px) {
     .container {
         padding: 0 15px;
     }
+    footer {
+        padding: 0 15px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .mv img {
+        width: 40%;
+    }
+    .service-inner {
+        padding: 0;
+    }
+    .about-inner {
+        padding: 0 20px;
+    }
+}
+
+/* スマホサイズ */
+@media screen and (max-width: 767px) {
 
     .logo img{
         width: 110px;
         height: 28px;
     }
     .btn2,.btn3,.btn4,.btn5,.btn6 {
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
     }
     .btn2 {
         margin-bottom: 15px;
@@ -413,17 +368,13 @@ small {
         display: block;
         text-align: center;
     }
-
-
     .mv {
         flex-direction: column-reverse;
         margin-top: 10px;
     }
     .mv img {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px  auto 0 auto;
         width: 100%;
-        margin-top: 10px;
     }
     .mv-left {
         margin: 0;
@@ -431,26 +382,19 @@ small {
     .mv-left h2 {
         font-size: 28px;
         width: 196px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
     .mv-left  p{
         text-align: center;
         max-width: 100%;
         margin: 20px 0;
     }
-
-    .section-ttl {
+    .heading h2 {
         font-size: 28px;
-        margin: 100px 0 80px 0;
-        padding: 0 15px;
     }
-    
     .service-inner {
         flex-direction: column;
         text-align: center;
-        padding: 0 5px;
-        width: 300px;
     }
     .service-inner p {
         margin-bottom: 50px;
@@ -461,9 +405,9 @@ small {
     .s-3 p {
         margin-bottom: 0;
     }
+
     .about-inner {
         padding: 0;
-        width: 345px;
     }
     .about-inner img {
         width: 100%;
@@ -485,15 +429,17 @@ small {
         margin-right: 0;
         text-align: left;
     }
-    .about-inner img + .about-txt {
-        margin-left: 0;
-    }
     .about-txt h3 {
         text-align: left;
         font-size: 32px;
     }
+    .about-inner img + .about-txt h3 {
+        margin-left: 0;
+    }
 
-
+    .about-inner img + .about-txt p {
+        margin-left: 0;
+    }
 
     .news-inner {
         margin-top: 80px;
@@ -516,24 +462,23 @@ small {
     time {
         margin-right: 16px;
     }
-    
     .btn6 {
         width: 166px;
         height: 48px;
-        margin-bottom: 115px;
+        margin: 50px auto 115px auto;
     }
 
-    
     footer {
         height: 289px;
+        max-width: 100%;
     }
-    .footer-logo {
+    .footer {
         display: block;
         flex-direction: column;
         padding: 0;
         text-align: center;
     }
-    .footer-logo img {
+    .footer img {
         margin-bottom: 23px;
     }
     ul {
@@ -544,7 +489,6 @@ small {
     }
     li {
         margin: 0 0 12px 0;
-
     }
     li + li{
         border: none; 
@@ -552,4 +496,7 @@ small {
     
     
 }
+
+
+
 
